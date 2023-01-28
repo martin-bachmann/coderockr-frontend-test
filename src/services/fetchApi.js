@@ -1,4 +1,4 @@
-async function fetchApi(endPoint) {
+export async function fetchApi(endPoint) {
   try {
     const response = await fetch(endPoint);
     const data = await response.json();
@@ -8,4 +8,4 @@ async function fetchApi(endPoint) {
   }
 }
 
-export default fetchApi;
+export const GET_POSTS_URL = 'https://sample-posts.coderockr.com/api/posts';
