@@ -1,0 +1,46 @@
+.big-card {
+  background: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 80px;
+  width: 1280px;
+}
+
+.big-card img {
+  height: 640px;
+  width: 640px;
+}
+
+.big-card .content-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 163px 80px;
+  width: 480px;
+}
+
+.big-card .content-inner h2 {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 400;
+  height: 35px;
+  line-height: 34px;
+  margin: 24px 0;
+}
+
+.big-card .content-inner h1 {
+  color: #f1a10a;
+  font-size: 36px;
+  font-weight: 700;
+  height: 85px;
+  line-height: 43px;
+  margin-bottom: 10px;
+}
+
+.big-card .content-inner p {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 400;
+  height: 97px;
+  line-height: 34px;
+  overflow: hidden;
+}
