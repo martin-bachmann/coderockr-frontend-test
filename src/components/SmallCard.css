@@ -1,0 +1,44 @@
+.small-card {
+  background: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 960px;
+}
+
+.small-card img {
+  height: 320px;
+  width: 320px;
+}
+
+.content-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 80px;
+}
+
+.content-inner h2 {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 400;
+  height: 35px;
+  line-height: 34px;
+  margin-bottom: 7px;
+}
+
+.content-inner h1 {
+  color: #f1a10a;
+  font-size: 36px;
+  font-weight: 700;
+  height: 85px;
+  line-height: 43px;
+  margin-bottom: 13px;
+}
+
+.content-inner p {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 400;
+  height: 97px;
+  line-height: 34px;
+  overflow: hidden;
+}
