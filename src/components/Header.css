@@ -4,37 +4,31 @@ header {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   height: 100px;
-  left: 0%;
-  position: absolute;
-  right: 0%;
+  justify-content: space-between;
+  left: 0;
+  position: sticky;
+  right: 0;
   top: 0;
 }
 
 header h1 {
   color: white;
-  font-family: Rubik , sans-serif;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  left: 16.67%;
   line-height: 43px;
-  position: absolute;
-  right: 65.81%;
+  margin-left: 320px;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
-  left: 65.89%;
-  position: absolute;
-  right: 16.61%;
+  margin-right: 320px;
+  width: 336px;
 }
 
 header a {
   color: white;
-  font-family: Rubik , sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 500;
   line-height: 38px;
   text-decoration: none;
