@@ -6,6 +6,10 @@
   width: 1280px;
 }
 
+.right-big-card {
+  align-self: flex-end;
+}
+
 .left-big-card {
   align-self: flex-start;
 }

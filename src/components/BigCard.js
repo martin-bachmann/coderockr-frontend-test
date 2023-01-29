@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './BigCard.css';
+import VectorButton from './VectorButton';
 
 function BigCard({ post, cssClass }) {
-  const { author, content, image, title } = post;
+  const { author, content, image, title, id } = post;
   return (
     <div className={ `big-card ${cssClass}-big-card` }>
       <img src={ image } alt={ title } />
@@ -12,6 +13,7 @@ function BigCard({ post, cssClass }) {
         <h1>{ title }</h1>
         <p>{ content }</p>
       </div>
+      <VectorButton postIndex={ id } />
     </div>
   );
 }

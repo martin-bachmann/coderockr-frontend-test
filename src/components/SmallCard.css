@@ -2,7 +2,8 @@
   background: white;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  width: 960px;
+  height: 16.666vw;
+  width: 50vw;
 }
 
 .right-row .small-card {
@@ -10,8 +11,13 @@
 }
 
 .small-card img {
-  height: 320px;
-  width: 320px;
+  height: 16.666vw;
+  width: 16.666vw;
+}
+
+.small-card .content {
+  display: flex;
+  flex-direction: row;
 }
 
 .small-card .content-inner {

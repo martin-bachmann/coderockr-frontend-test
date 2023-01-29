@@ -1,0 +1,12 @@
+.vector {
+  align-self: flex-end;
+  height: 16px;
+  margin: 0 40px 40px 0;
+  width: 24px;
+}
+
+.vector img {
+  color: #032937;
+  height: 16px;
+  width: 24px;
+}

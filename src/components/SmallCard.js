@@ -1,16 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './SmallCard.css';
+import VectorButton from './VectorButton';
 
 function SmallCard({ post }) {
-  const { author, content, image, title } = post;
+  const { author, content, image, title, id } = post;
   return (
     <div className="small-card">
       <img src={ image } alt={ title } />
-      <div className="content-inner">
-        <h2>{ author.name }</h2>
-        <h1>{ title }</h1>
-        <p>{ content }</p>
+      <div className="content">
+        <div className="content-inner">
+          <h2>{ author.name }</h2>
+          <h1>{ title }</h1>
+          <p>{ content }</p>
+        </div>
+        <VectorButton postIndex={ id } />
       </div>
     </div>
   );
