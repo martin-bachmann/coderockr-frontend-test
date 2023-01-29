@@ -10,7 +10,7 @@
   flex-direction: row-reverse;
 }
 
-.small-card img {
+.small-card .small-card-img {
   height: 16.666vw;
   width: 16.666vw;
 }

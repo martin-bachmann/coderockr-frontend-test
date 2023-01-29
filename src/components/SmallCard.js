@@ -7,7 +7,7 @@ function SmallCard({ post }) {
   const { author, content, image, title, id } = post;
   return (
     <div className="small-card">
-      <img src={ image } alt={ title } />
+      <img src={ image } alt={ title } className="small-card-img" />
       <div className="content">
         <div className="content-inner">
           <h2>{ author.name }</h2>
