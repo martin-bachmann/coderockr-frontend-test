@@ -5,18 +5,22 @@
   width: 960px;
 }
 
+.right-row .small-card {
+  flex-direction: row-reverse;
+}
+
 .small-card img {
   height: 320px;
   width: 320px;
 }
 
-.content-inner {
+.small-card .content-inner {
   display: flex;
   flex-direction: column;
   margin: 35px 80px;
 }
 
-.content-inner h2 {
+.small-card .content-inner h2 {
   color: #2d2d2d;
   font-size: 24px;
   font-weight: 400;
@@ -25,7 +29,7 @@
   margin-bottom: 7px;
 }
 
-.content-inner h1 {
+.small-card .content-inner h1 {
   color: #f1a10a;
   font-size: 36px;
   font-weight: 700;
@@ -34,7 +38,7 @@
   margin-bottom: 13px;
 }
 
-.content-inner p {
+.small-card .content-inner p {
   color: #2d2d2d;
   font-size: 24px;
   font-weight: 400;

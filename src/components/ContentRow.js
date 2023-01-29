@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 import SmallCard from './SmallCard';
 import './ContentRow.css';
 
-function ContentRow({ firstPost, secondPost }) {
-  console.log(firstPost);
-  console.log(secondPost);
+function ContentRow({ firstPost, secondPost, cssClass }) {
   return (
-    <div className="content-row">
+    <div className={ `content-row ${cssClass}-row` }>
       <SmallCard post={ firstPost } />
       <SmallCard post={ secondPost } />
     </div>

@@ -6,6 +6,10 @@
   width: 1280px;
 }
 
+.left-big-card {
+  align-self: flex-start;
+}
+
 .big-card img {
   height: 640px;
   width: 640px;
