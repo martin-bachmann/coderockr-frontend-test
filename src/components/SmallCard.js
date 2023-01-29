@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './SmallCard.css';
-import VectorButton from './VectorButton';
+import ArrowButton from './ArrowButton';
 
 function SmallCard({ post }) {
   const { author, content, image, title, id } = post;
@@ -14,7 +14,7 @@ function SmallCard({ post }) {
           <h1>{ title }</h1>
           <p>{ content }</p>
         </div>
-        <VectorButton postIndex={ id } />
+        <ArrowButton postIndex={ id } />
       </div>
     </div>
   );

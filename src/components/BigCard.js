@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './BigCard.css';
-import VectorButton from './VectorButton';
+import ArrowButton from './ArrowButton';
 
 function BigCard({ post, cssClass }) {
   const { author, content, image, title, id } = post;
@@ -13,7 +13,7 @@ function BigCard({ post, cssClass }) {
         <h1>{ title }</h1>
         <p>{ content }</p>
       </div>
-      <VectorButton postIndex={ id } />
+      <ArrowButton postIndex={ id } />
     </div>
   );
 }
