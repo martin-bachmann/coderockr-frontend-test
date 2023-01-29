@@ -1,6 +1,6 @@
 .header-wrapper {
   left: 0;
-  position: sticky;
+  position: absolute;
   right: 0;
   top: 0;
 }

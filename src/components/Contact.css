@@ -1,17 +1,29 @@
-.contact-background {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100vh;
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 0;
   width: 100vw;
 }
 
-.contact-container {
+.contact-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.contact-form {
   align-items: center;
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin: 459px 555px;
+  margin: 200px;
+  position: absolute;
+  width: 810px;
+  z-index: 2;
 }
 
 .close-button {
@@ -23,7 +35,7 @@
   width: 28px;
 }
 
-.contact-container h1 {
+.contact-form h1 {
   color: #f1a10a;
   font-size: 36px;
   font-weight: 700;
@@ -31,42 +43,48 @@
   margin-bottom: 49px;
 }
 
-.contact-container p {
+.contact-form p {
   color: black;
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
 }
 
-.contact-container input {
+.contact-form input {
   border: 1px solid #2d2d2d;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
   height: 60px;
+  line-height: 34px;
   margin-bottom: 48px;
   padding: 0 15px;
   width: 550px;
 }
 
-.contact-container input::placeholder {
+.contact-form input::placeholder {
   color: rgba(0, 0, 0, 0.51);
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
 }
 
-.contact-container textarea {
+.contact-form textarea {
   border: 1px solid #2d2d2d;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
   height: 185px;
+  line-height: 34px;
   margin-bottom: 72px;
   padding: 15px;
   resize: none;
   width: 550px;
 }
 
-.contact-container textarea::placeholder {
+.contact-form textarea::placeholder {
   color: rgba(0, 0, 0, 0.51);
   font-size: 24px;
   font-weight: 400;

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '../components/Header';
 import { fetchApi, GET_POSTS_URL } from '../services/fetchApi';
 import './CompletePost.css';
 
@@ -30,8 +29,7 @@ function CompletePost() {
   };
 
   return (
-    <div className="background">
-      <Header />
+    <div>
       <div className="post-content">
         <div className="content-header">
           <img src={ post.image } alt={ post.title } />
@@ -43,6 +41,7 @@ function CompletePost() {
         </div>
         <p>{ post.content }</p>
       </div>
+      <div className="transparent-div" />
     </div>
   );
 }

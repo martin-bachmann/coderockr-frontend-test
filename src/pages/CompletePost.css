@@ -54,3 +54,7 @@
   line-height: 26px;
   margin-bottom: 44px;
 }
+
+.transparent-div {
+  height: 1px;
+}

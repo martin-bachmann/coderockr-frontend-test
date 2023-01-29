@@ -42,6 +42,7 @@
   height: 85px;
   line-height: 43px;
   margin-bottom: 13px;
+  overflow: hidden;
 }
 
 .small-card .content-inner p {
