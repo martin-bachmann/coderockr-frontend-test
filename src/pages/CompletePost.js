@@ -22,7 +22,12 @@ function CompletePost() {
     fetchPosts();
   }, []);
 
-  console.log(post);
+  const formatDate = (dateStr) => {
+    const REMOVE_INDEX = -1;
+    const date = new Date(dateStr.slice(0, REMOVE_INDEX));
+    const formatedDate = date.toDateString().split(' ').slice(1).join(' ');
+    return formatedDate;
+  };
 
   return (
     <div className="background">
@@ -31,7 +36,7 @@ function CompletePost() {
         <div className="content-header">
           <img src={ post.image } alt={ post.title } />
           <div className="content-details">
-            <h3>{ post.createdAt }</h3>
+            <h3>{ formatDate(post.createdAt) }</h3>
             <h2>{ post.author.name }</h2>
             <h1>{ post.title }</h1>
           </div>
