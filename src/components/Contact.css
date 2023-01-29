@@ -1,0 +1,93 @@
+.contact-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.contact-container {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 459px 555px;
+}
+
+.close-button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  height: 28px;
+  margin: 50px 50px 11px 0;
+  width: 28px;
+}
+
+.contact-container h1 {
+  color: #f1a10a;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 49px;
+}
+
+.contact-container p {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.contact-container input {
+  border: 1px solid #2d2d2d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 60px;
+  margin-bottom: 48px;
+  padding: 0 15px;
+  width: 550px;
+}
+
+.contact-container input::placeholder {
+  color: rgba(0, 0, 0, 0.51);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.contact-container textarea {
+  border: 1px solid #2d2d2d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 185px;
+  margin-bottom: 72px;
+  padding: 15px;
+  resize: none;
+  width: 550px;
+}
+
+.contact-container textarea::placeholder {
+  color: rgba(0, 0, 0, 0.51);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.submit-button {
+  background: #2d2d2d;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 34px;
+  margin-bottom: 112px;
+  width: 230px;
+}
+
+.submit-button img {
+  height: 18px;
+  margin-right: 30px;
+  width: 21px;
+}

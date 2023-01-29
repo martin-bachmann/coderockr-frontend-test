@@ -1,3 +1,10 @@
+.header-wrapper {
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+
 header {
   align-items: center;
   background: #2d2d2d;
@@ -33,4 +40,13 @@ header a {
   font-weight: 500;
   line-height: 38px;
   text-decoration: none;
+}
+
+header nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
 }
