@@ -12,7 +12,7 @@ const CARDS_INTERVAL = 3;
 function InfiniteScrollPage() {
   const [posts, setPosts] = useState([]);
   const [cards, setCards] = useState([]);
-  const [currentSize, setCurrentSize] = useState(0);
+  const [currentSize, setCurrentSize] = useState(PAGE_SIZE);
   const loader = useRef(null);
 
   useEffect(() => {
@@ -25,10 +25,10 @@ function InfiniteScrollPage() {
 
   const handleObserver = useCallback((entries) => {
     const target = entries[0];
-    if (target.isIntersecting) {
+    if (target.isIntersecting && posts.length !== 0) {
       setCurrentSize((prev) => prev + PAGE_SIZE);
     }
-  }, []);
+  }, [posts]);
 
   useEffect(() => {
     const option = {
