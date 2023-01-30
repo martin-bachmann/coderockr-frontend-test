@@ -6,7 +6,7 @@ import './ArrowButton.css';
 
 function ArrowButton({ postIndex }) {
   return (
-    <Link to={ `posts/${postIndex}` } className="arrow">
+    <Link to={ `posts/${postIndex}` } className="arrow" data-testid="arrow-button">
       <img src={ arrow } alt="Open post page" />
     </Link>
   );
