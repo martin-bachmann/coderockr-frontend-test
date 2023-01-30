@@ -1,0 +1,77 @@
+.big-card {
+  background: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 4.2vw;
+  width: 100vw;
+}
+
+.right-big-card {
+  align-self: flex-end;
+}
+
+.left-big-card {
+  align-self: flex-start;
+}
+
+.big-card img {
+  height: 45vw;
+  width: 45vw;
+}
+
+.big-card .content-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+}
+
+.big-card .content-inner h2 {
+  color: #2d2d2d;
+  height: calc(18px + 1.5vw);
+  margin-bottom: 0.4vw;
+  overflow: hidden;
+}
+
+.big-card .content-inner h1 {
+  color: #f1a10a;
+  height: calc(36px + 3vw);
+  margin-bottom: 0.7vw;
+  overflow: hidden;
+}
+
+.big-card .content-inner p {
+  color: #2d2d2d;
+  height: calc(54px + 4.5vw);
+  overflow: hidden;
+}
+
+@media only screen and ( min-width : 992px ) {
+
+  .big-card {
+    width: 66.666vw;
+  }
+
+  .big-card img {
+    height: 33.333vw;
+    width: 33.333vw;
+  }
+
+  .big-card .content-inner {
+    margin: 8.5vw 4.2vw;
+    width: 25vw;
+  }
+
+  .big-card .content-inner h2 {
+    height: 1.85vw;
+    margin: 1.2vw 0;
+  }
+
+  .big-card .content-inner h1 {
+    height: 4.4vw;
+    margin-bottom: 0.55vw;
+  }
+
+  .big-card .content-inner p {
+    height: 5vw;
+  }
+}

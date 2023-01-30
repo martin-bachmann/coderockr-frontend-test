@@ -1,0 +1,143 @@
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+}
+
+.contact-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.contact-form {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10.4vw;
+  position: absolute;
+  width: 80vw;
+  z-index: 2;
+}
+
+.close-button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  height: calc(5px + 3vw);
+  margin: 8px 8px 0 0;
+  width: calc(5px + 3vw);
+}
+
+.close-button img {
+  height: calc(5px + 3vw);
+  width: calc(5px + 3vw);
+}
+
+.contact-form h1 {
+  color: #f1a10a;
+  margin-bottom: 2.6vw;
+}
+
+.contact-form p {
+  color: black;
+}
+
+.contact-form input {
+  border: 1px solid #2d2d2d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: calc(15px + 5vw);
+  margin-bottom: calc(5px + 3vw);
+  padding: 0 calc(5px + 2vw);
+  width: calc(100px + 30vw);
+}
+
+.contact-form input::placeholder {
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.contact-form textarea {
+  border: 1px solid #2d2d2d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: calc(35px + 10vw);
+  margin-bottom: calc(5px + 3vw);
+  padding: calc(5px + 2vw);
+  resize: none;
+  width: calc(100px + 30vw);
+}
+
+.contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.submit-button {
+  background: #2d2d2d;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: calc(10px + 1.5vw);
+  font-weight: 500;
+  height: calc(15px + 5vw);
+  line-height: calc(18px + 1.5vw);
+  margin-bottom: 5.85vw;
+  width: calc(100px + 30vw);
+}
+
+.submit-button img {
+  height: calc(3px + 3vw);
+  margin-right: calc(7px + 1.5vw);
+  width: calc(3px + 3vw);
+}
+
+@media only screen and ( min-width : 992px ) {
+
+  .contact-form {
+    width: 45vw;
+  }
+
+  .close-button {
+    height: 1.4vw;
+    margin: 2.6vw 2.6vw 0.6vw 0;
+    width: 1.4vw;
+  }
+
+  .close-button img {
+    height: 1.4vw;
+    width: 1.4vw;
+  }
+
+  .contact-form input {
+    height: 3.2vw;
+    margin-bottom: 2.5vw;
+    padding: 0 0.8vw;
+    width: 29vw;
+  }
+
+  .contact-form textarea {
+    height: 9.7vw;
+    margin-bottom: 3.8vw;
+    padding: 0.8vw;
+    width: 29vw;
+  }
+
+  .submit-button {
+    font-size: 1.2vw;
+    height: 3.2vw;
+    line-height: 1.8vw;
+    width: 12vw;
+  }
+
+  .submit-button img {
+    height: 0.95vw;
+    margin-right: 1.6vw;
+    width: 1.1vw;
+  }
+}
