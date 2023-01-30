@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import BigCard from '../components/BigCard';
 import ContentRow from '../components/ContentRow';
-import Header from '../components/Header';
 import { fetchApi, GET_POSTS_URL } from '../services/fetchApi';
 import './InfiniteScrollPage.css';
 
@@ -54,7 +53,6 @@ function InfiniteScrollPage() {
             key={ i }
           />);
           i += 1;
-          console.log(isLeft);
         } else {
           cardsArray.push(
             <ContentRow
@@ -72,8 +70,7 @@ function InfiniteScrollPage() {
   }, [currentSize, posts]);
 
   return (
-    <div className="background">
-      <Header />
+    <div>
       <div className="posts">
         {
           cards.length > 0 ? cards.map((item) => item) : <div />
