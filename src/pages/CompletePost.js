@@ -19,7 +19,7 @@ function CompletePost() {
       setPost(fetchedPost);
     };
     fetchPosts();
-  }, []);
+  }, [id]);
 
   const formatDate = (dateStr) => {
     const REMOVE_INDEX = -1;
