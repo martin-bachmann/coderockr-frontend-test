@@ -1,6 +1,14 @@
 .content-row {
   display: flex;
-  height: 320px;
+  flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 80px;
+}
+
+@media only screen and ( min-width : 992px ) {
+
+  .content-row {
+    flex-direction: row;
+    height: 16.7vw;
+    margin-bottom: 4.2vw;
+  }
 }

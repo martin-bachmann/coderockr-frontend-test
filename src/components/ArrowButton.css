@@ -1,12 +1,29 @@
 .arrow {
   align-self: flex-end;
-  height: 16px;
-  margin: 0 40px 40px 0;
-  width: 24px;
+  height: calc(5px + 3vw);
+  margin: 0 5px 5px 0;
+  width: calc(5px + 3vw);
 }
 
 .arrow img {
   color: #032937;
-  height: 16px;
-  width: 24px;
+  height: calc(5px + 3vw);
+  width: calc(5px + 3vw);
+}
+
+
+@media only screen and ( min-width : 992px ) {
+
+  .arrow {
+    align-self: flex-end;
+    height: 0.8vw;
+    margin: 0 2vw 2vw 0;
+    width: 1.2vw;
+  }
+
+  .arrow img {
+    color: #032937;
+    height: 0.8vw;
+    width: 1.2vw;
+  }
 }
